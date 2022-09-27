@@ -10,9 +10,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 class inicio : AppCompatActivity() {
 
-    val sesion2 = findViewById <Button> ( R.id.sesion2 )
+    /*val sesion2 = findViewById <Button> ( R.id.sesion2 )
     val email = findViewById<EditText>(R.id.email)
-    val password = findViewById<EditText>(R.id.password)
+    val password = findViewById<EditText>(R.id.password)*/
     val atras = findViewById<Button>(R.id.atras)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +20,10 @@ class inicio : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
 
         atras.setOnClickListener {
-            val lanzar = Intent(this, MainActivity::class.java)
-            startActivity(lanzar)
+            val regresar = Intent(this, MainActivity::class.java)
+            startActivity(regresar)
         }
-        sesion2.setOnClickListener {
+        /*sesion2.setOnClickListener {
             if (email.equals("bryan@gmail.com") && password.equals("2468")) {
                 val lanzar2 = Intent(this, principal::class.java)
                 startActivity(lanzar2)
@@ -32,7 +32,7 @@ class inicio : AppCompatActivity() {
                     this@inicio, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT
                 ).show()
             }
-        }
+        }*/
     }
 }
 

@@ -10,7 +10,6 @@ import android.widget.Button
 
 
 class MainActivity: AppCompatActivity() {
-
     //declaracion de variable para el video de fondo
     protected lateinit var vv_fondo: VideoView
     protected lateinit var mMediaPlayer: MediaPlayer
@@ -19,8 +18,9 @@ class MainActivity: AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-            val boton1 = findViewById < Button > ( R.id.sesion )
-            boton1.setOnClickListener {
+
+            val sesion = findViewById <Button> ( R.id.sesion )
+            sesion.setOnClickListener {
                 val lanzar = Intent (this , inicio :: class.java )
                 startActivity ( lanzar )
             }

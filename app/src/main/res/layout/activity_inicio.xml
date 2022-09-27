@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".inicio">
 
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="419dp"
-        android:layout_height="920dp"
-        android:background="?android:attr/textColorTertiaryInverse"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-15dp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="120dp"
